@@ -9,39 +9,111 @@ html,
 body {
   height: 100%;
   width: 100%;
+  padding: 40px;
 }
 
-
-.container{
-  height: 100%;
-  width: 100%;
-  /* background-color: lightblue; */
-
-  /* p{
-    width: 60%;
-    float: left;
-  }
+/* .box{
+  height: 500px;
+  width: 800px;
+  background-color: red;
 
   img{
-    width: 35%;
-    height: 300px;
-    margin-left: 40px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    float: left;
-  } */
-
-  .box{
-    height: 300px;
-    width: 33.33%;
-    /* background-color: red; */
-    float: left;
-    padding: 10px;
-
-    img{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      background-position: center;
-    }
   }
+} */
+
+h1 {
+  position: relative;
+  width: fit-content;
+  /* background-color: blue; */
+}
+
+/* h1:hover{
+  color: blue;
+} */
+
+h1::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 0%;
+  bottom: 0%;
+  background-color: red;
+  transition: all 1s ease-in-out;
+}
+
+h1:hover::after {
+  width: 100%;
+}
+
+/* button {
+  margin-top: 40px;
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 100px;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+} */
+
+/* button:hover{
+  background-color: black;
+  color: white;
+} */
+
+/* button::after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  transition: all 0.4s ease;
+  background-color: black;
+  bottom: 0%;
+  left: 50%;
+  z-index: -1;
+  border-radius: 100px;
+  transform: translate(-50%, 0%);
+}
+
+button:hover::after {
+  height: 100%;
+  width: 100%;
+}
+
+button:hover {
+  color: white;
+} */
+
+
+button{
+  padding: 10px 30px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid gray;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+button::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  top: 0%;
+  left: 0%;
+  border-radius: 50%;
+  transform: translateY(100%);
+  transition: all .5s ease;
+}
+
+button:hover::after{
+  transform: translateY(-100%);
 }
