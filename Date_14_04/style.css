@@ -49,7 +49,7 @@ h1:hover::after {
   width: 100%;
 }
 
-/* button {
+button {
   margin-top: 40px;
   padding: 10px 25px;
   background-color: transparent;
@@ -59,14 +59,14 @@ h1:hover::after {
 
   position: relative;
   overflow: hidden;
-} */
+} 
 
-/* button:hover{
+ /* button:hover{
   background-color: black;
   color: white;
 } */
 
-/* button::after {
+button::after {
   content: "";
   position: absolute;
   height: 0%;
@@ -87,10 +87,10 @@ button:hover::after {
 
 button:hover {
   color: white;
-} */
+}
 
 
-button{
+/* button{
   padding: 10px 30px;
   background-color: transparent;
   border-radius: 100px;
@@ -116,4 +116,4 @@ button::after{
 
 button:hover::after{
   transform: translateY(-100%);
-}
+} */
