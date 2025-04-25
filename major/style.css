@@ -65,10 +65,9 @@ nav {
   height: 85vh;
   width: 100%;
   border-radius: 15px;
-  background-image: url("https://vineta-html.vercel.app/images/slider/phonecase/slider-phonecase-2.jpg");
+  background-image: url("https://vineta-html.vercel.app/images/slider/phonecase/slider-phonecase-1.jpg");
   background-position: center;
   background-size: cover;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,19 +89,149 @@ nav {
     width: 210px;
     margin-top: 30px;
     height: 50px;
-    font-size: 20px;
+    font-size: 17px;
     border-radius: 100px;
     border: none;
     cursor: pointer;
+    background-color: black;
+    color: white;
     transition: all 0.4s ease;
 
     span i {
       font-size: 20px;
     }
+
+    &:hover {
+      background-color: #ff6f61;
+      color: white;
+    }
   }
 }
 
-.shop_btn:hover {
-  background-color: #ff6f61;
-  color: white;
+#section2 {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .category-main {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-top: 70px;
+    .category {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        height: 120px;
+        width: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      h2 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+#section3{
+  height: 100vh;
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 60px 20px;
+
+  h3{
+    text-align: center;
+    color: #FF6F61;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+  }
+
+  .card_main{
+    margin-top: 20px;
+    width: 100%;
+    /* background-color: #ff4837; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+
+    .card{
+      height: 100%;
+      width: 100%;
+
+      .imagediv{
+        height: 300px;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid rgb(199, 199, 199);
+
+        img{
+          height: 100%;
+          width: 100%;
+          border-radius: 20px;
+          background-size: cover;
+          background-position: center;
+        }
+      }
+
+      h4{
+        text-align: center;
+        margin-top: 10px;
+        transition: all .3s ease;
+        cursor: pointer;
+
+        &:hover{
+          color: #FF6F61;
+        }
+      }
+
+      h5{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+
+        #price{
+          color: #FF6F61;
+        }
+        #dis{
+          color: rgb(77, 77, 77);
+          margin-left: 10px;
+        }
+      }
+
+      .btndiv{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+
+        button{
+          background-color: transparent;
+          padding: 8px 20px;
+          border: 1px solid rgb(184, 184, 184);
+          border-radius: 100px;
+          cursor: pointer;
+          transition: all .3s ease;
+
+          &:hover{
+            border-color: black;
+          }
+        }
+      }
+    }
+  }
 }
