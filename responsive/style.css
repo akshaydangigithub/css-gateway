@@ -1,0 +1,39 @@
+:root{
+  --primary-color: rgb(255, 0, 204);
+  --btn-padding: 10px 30px;
+}
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.btn1{
+  padding: var(--btn-padding);
+  margin: 20px;
+  border-radius: 100px;
+  background-color: var(--primary-color);
+  border: 1px solid black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn2{
+  padding: var(--btn-padding);
+  background-color: blueviolet;
+}
+
+h1{
+  color: var(--primary-color);
+  margin: 30px;
+}

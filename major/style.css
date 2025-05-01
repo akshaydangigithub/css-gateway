@@ -376,3 +376,39 @@ nav {
     }
   }
 }
+
+@media (width<830px) {
+  nav {
+    display: none;
+  }
+
+  .category-main {
+    grid-template-columns: auto auto !important;
+  }
+
+  #section3 {
+    height: auto;
+  }
+  .card_main {
+    grid-template-columns: auto !important;
+  }
+
+  #section4 {
+    > .content {
+      width: 95%;
+      .time_row {
+        gap: 10px;
+        .time_box {
+          padding: 10px 5px;
+          h1 {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .sec5_card_row {
+    grid-template-columns: auto !important;
+  }
+}
